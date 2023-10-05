@@ -33,9 +33,18 @@ app.set('view engine', 'handlebars');
 
 // Rotas
 
-// Rota para renderizar o formulario
 app.get('/',  (req,res) =>{
+    res.redirect('/form');
+})
+
+
+// Rota para renderizar o formulario
+app.get('/form',  (req,res) =>{
     res.render('form.handlebars');
+})
+
+app.get('/add',  (req,res) =>{
+    res.render('add.handlebars');
 })
 
 // Rota para adicionar um novo registro no formulário
@@ -48,7 +57,8 @@ app.post('/add', (req, res) => {
         res.status(500).send('Erro ao inserir registro.');
       } else {
         console.log('Registro inserido com sucesso');
-        res.status(201).send('Registro inserido com sucesso.');
+        //res.status(201).send('Registro inserido com sucesso.');
+        res.render('add.handlebars');
       }
     });
 });
