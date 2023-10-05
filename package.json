@@ -1,0 +1,24 @@
+{
+  "name": "gestao-tempo-backend",
+  "version": "1.0.0",
+  "description": "Projeto inicial do backend para a aplicação de Gestao de tempo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrichslucas/gestao-tempo-backend.git"
+  },
+  "author": "lucas chagas henrichs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrichslucas/gestao-tempo-backend/issues"
+  },
+  "homepage": "https://github.com/henrichslucas/gestao-tempo-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mysql": "^2.18.1"
+  }
+}
